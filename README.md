@@ -68,10 +68,8 @@ To get my dotfiles follow these simple steps:
 2. Install home-manager in standalone mode by following these [instructions](https://nix-community.github.io/home-manager/#sec-install-standalone).
 3. Run the following commands in your terminal:
 
-        ```bash
         git clone https://github.com/timon-schwarz/my-dotfiles.git ~/.config/home-manager
         home-manager switch
-        ```
 
 4. Restart your system.
 
@@ -80,6 +78,7 @@ To get my dotfiles follow these simple steps:
 
 If you want to add your own customizations on top of this image, you are advised strongly against forking. Instead, create a repo for your own image by using the [BlueBuild template](https://github.com/blue-build/template), then change your `base-image` to this image.
 This will allow you to apply your customizations to secureblue in a concise and maintainable way, without the need to constantly sync with upstream. 
+
 Granted I still do not recommend this because I will be changing this image as I see fit for my PERSONAL needs.
  
 ## Verification
