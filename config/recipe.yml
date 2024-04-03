@@ -65,12 +65,12 @@ modules:
 
     # networking and bluetooth
       - network-manager-applet		# tray icon
+      - NetworkManager-tui		# TUI
       - NetworkManager-openvpn		# openvpn support
       - NetworkManager-openconnect	# openconnect support
-      - NetworkManager-bluetooth        # bluetooth support
       - bluez				# server
       - bluez-tools			# CLI
-      #- blueman			# GUI
+      - blueman			        # GUI
 
     # file manager
       - thunar 				# file manager GUI
