@@ -95,7 +95,7 @@ modules:
       - swayidle			# screen timeout
      
      # terminal
-      - foot
+      - kitty                           # Comes pre installed with hyprland
      
      # notifications
       - dunst
