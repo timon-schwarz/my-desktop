@@ -1,10 +1,10 @@
 # image will be published to ghcr.io/<user>/<name>
-name: template
+name: my-desktop
 # description will be included in the image's metadata
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/silverblue-main
+base-image: ghcr.io/ublue-os/base-nvidia
 image-version: 39 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -12,38 +12,101 @@ image-version: 39 # latest is also supported if you want new updates ASAP
 modules:
   - type: files
     files:
-      - usr: /usr # copies config/files/usr into your image's /usr.
-                  # put configuration files you want in /etc/ on a booted system 
-                  # in /usr/etc/ in the image. read more in files module reference.
+      - usr: /usr
+          # copies config/files/usr into your image's /usr.
+          # put configuration files you want in /etc/ on a booted system 
+          # in /usr/etc/ in the image. read more in files module reference.
 
   - type: rpm-ostree
-    repos:
-      # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
     install:
-      # - micro
-      # - starship
-    remove:
-      # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
-      # - firefox
-      # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+    # other
+      - xorg-x11-server-Xwayland	# X11 application suppport
+      - xdg-user-dirs			# localized XDG user directories
+      - dbus-tools			# dbus support (which is used for inter process communication)
+      - dbus-daemon			# dbus support (which is used for inter process communication)
+      - wl-clipboard 			# clipboard management CLI
 
-  - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system:
-      # If no repo information is specified, Flathub will be used by default
-      # repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-      # repo-name: flathub
-      # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
-      install:
-        # - org.mozilla.firefox
-        # - org.gnome.Loupe
-        # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
-      # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
-      # only normal flatpak applications are (like Floorp Lightning web browser in this example).
-      # Installing different branches of the same Flatpak is not supported.
-      remove:
-      # - org.gnome.eog
+    # window manager
+      - hyprland 			# window manager
+      - waybar				# status bar
+      - xdg-desktop-portal-hyprland 	# hyprland XDG desktop portal (eg. needed for flatpak) backend
+
+    # grahpics
+      - qt5-qtwayland			# QT5 support
+      - qt6-qtwayland 			# QT6 support
+      - vulkan-validation-layers	# Vulkan support
+      - vulkan-tools 			# Vulkan support
+
+    # authentication and secrets
+      - polkit				# root privilege authentication server
+      - lxpolkit 			# root privilege authentication request GUI
+      - gnome-keyring			# secure secret storage
+
+    # display manager
+    #  - sddm				# GUI
+    #  - sddm-themes			# themes
+
+    # app launcher
+      - rofi-wayland			# GUI
+      
+    # disk control
+      - gnome-disk-utility		# GUI
+    
+    # editor
+      - vim             		# I use neovim instead but i fell like vim should be on every linux machine...
+      - neovim          		# GUI
+      
+    # sound
+      - pipewire			# sound/video server
+      - wireplumber			# pipewire GUI
+      - pamixer				# pulse audio CLI
+      - pavucontrol			# pulse audio GUI
+      - playerctl 			# media control CLI
+
+    # networking and bluetooth
+      - network-manager-applet		# tray icon
+      - NetworkManager-openvpn		# openvpn support
+      - NetworkManager-openconnect	# openconnect support
+      - NetworkManager-bluetooth        # bluetooth support
+      - bluez				# server
+      - bluez-tools			# CLI
+      #- blueman			# GUI
+
+    # file manager
+      - thunar 				# file manager GUI
+      - thunar-archive-plugin		# adds archive action to thunar
+      - thunar-volman 			# removable drives and media support for thunar
+      - xarchiver 			# show the contents of archvies
+      - imv 				# image viewer (for thumbnails)
+      - p7zip 				# greater range of archive format support
+      - unrar-free 			# rar archive support
+
+    # screenshot
+      - grimshot			# screenshot GUI
+      - grim				# screenshot support
+      - slurp				# screenshot region support
+     
+     # display
+      - wlr-randr			# wayland xranr clone for screen configuration
+      - kanshi				# dynamic screen configurator similar to autorandr
+      #- wlsunset			# I currently do not see a need for this
+      - brightnessctl			# brightness controll CLI
+      - swaylock			# screen locker
+      - swayidle			# screen timeout
+     
+     # terminal
+      - foot
+     
+     # notifications
+      - dunst
+     
+     # video
+      - mpv 				# video player
+     
+     # theme and GUI
+      - adwaita-qt5 			# adwaita theme for QT5
+      - gnome-themes-extra		# adwaita theme for GTK2
+      - gnome-icon-theme		# adwaita theme for icons
+      #- fontawesome-fonts-all 		# I currently do not see a need for this
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
-

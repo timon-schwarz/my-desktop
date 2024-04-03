@@ -9,6 +9,7 @@ on:
       
   pull_request:
   workflow_dispatch: # allow manually triggering builds
+
 jobs:
   bluebuild:
     name: Build Custom Image
