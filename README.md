@@ -26,7 +26,7 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 - Then rebase to the signed image, like so:
   ```bash
-  rpm-ostree rebase ostree-image-signed:ghcr.io/timon-schwarz/my-desktop:latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/timon-schwarz/my-desktop:latest
   ```
 - Reboot again to complete the installation
   ```bash
