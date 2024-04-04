@@ -121,5 +121,20 @@ modules:
       - fontawesome-fonts-all 		# It is nice to have some fonts ready when needed
       - mozilla-fira-sans-fonts         # It is nice to have some fonts ready when needed
 
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - JetBrainsMono
+      google-fonts:
+        - Roboto
+        - Roboto Condensed
+        - Open Sans
+        - Lato 
+        - Noto Sans JP
+        - Montserrat 
+        - Oswald
+        - Poppins
+        - Raleway
+        - Material Icons
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
