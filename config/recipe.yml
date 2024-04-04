@@ -33,14 +33,20 @@ modules:
 
     # grahpics
       - qt5-qtwayland			# QT5 support
+      - qt5ct                           # QT5 configuration tool
       - qt6-qtwayland 			# QT6 support
+      - qt6ct                           # QT6 configuration tool
+      - libva                           # Video acceleration support
+      #- libva-nvidia-driver             # Video acceleration support for nvidia (additional package)
       - vulkan-validation-layers	# Vulkan support
       - vulkan-tools 			# Vulkan support
 
     # authentication and secrets
-      - polkit				# root privilege authentication server
-      - lxpolkit 			# root privilege authentication request GUI
+      - polkit				# polkit server
+      - polkit-kde 			# polkit agent GUI
       - gnome-keyring			# secure secret storage
+      - libsecret                       # keyring API that applications use
+      - seahorse                        # keyring management GUI
 
     # display manager
     #  - sddm				# GUI

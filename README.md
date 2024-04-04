@@ -50,8 +50,14 @@ If you are using an nvidia image, run this after installation:
 rpm-ostree kargs \
     --append=rd.driver.blacklist=nouveau \
     --append=modprobe.blacklist=nouveau \
-    --append=nvidia-drm.modeset=1
+    --append=nvidia-drm.modeset=1 \
+    --append=nvidia.NVreg_PreserveVideoMemoryAllocations=1
+systemctl enable nvidia-suspend.service
+systemctl enable nvidia-hibernate.service
+systemctl enable nvidia-resume.service
 ```
+
+Then reboot your machine.
 
 #### Nvidia optimus laptop
 
@@ -60,6 +66,8 @@ If you are using an nvidia image on an optimus laptop, run this after installati
 ```bash
 ujust configure-nvidia-optimus
 ```
+
+Then reboot your machine.
 
 ### Dotfiles
 
