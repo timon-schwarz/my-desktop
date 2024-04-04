@@ -99,6 +99,7 @@ modules:
       - brightnessctl			# brightness controll CLI
       - swaylock			# screen locker
       - swayidle			# screen timeout
+      - wlogout                         # logout, reboot, shutdown etc menu GUI
      
      # terminal
       - kitty                           # Comes pre installed with hyprland
