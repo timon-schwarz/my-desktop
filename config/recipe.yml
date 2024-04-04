@@ -97,6 +97,7 @@ modules:
       - kanshi				# dynamic screen configurator similar to autorandr
       #- wlsunset			# I currently do not see a need for this
       - brightnessctl			# brightness controll CLI
+      - swaybg                          # wallpaper engine
       - swaylock			# screen locker
       - swayidle			# screen timeout
       - wlogout                         # logout, reboot, shutdown etc menu GUI
