@@ -140,4 +140,10 @@ modules:
         - Raleway
         - Material Icons
 
+  - type: default-flatpaks
+    notify: true
+    system:
+      install: com.discordapp.Discord
+
+
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
