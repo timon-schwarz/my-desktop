@@ -104,7 +104,10 @@ modules:
       - kitty                           # Comes pre installed with hyprland
      
      # notifications
-      - dunst
+      - dunst                           # Notification daemon
+      
+     # utility
+      - psensor                         # Hardware sensor monitoring GUI
      
      # video
       - mpv 				# video player
