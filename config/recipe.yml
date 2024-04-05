@@ -107,7 +107,7 @@ modules:
       - dunst                           # Notification daemon
       
      # utility
-      - psensor                         # Hardware sensor monitoring GUI
+      - xsensors                        # Hardware sensor monitoring GUI
      
      # video
       - mpv 				# video player
