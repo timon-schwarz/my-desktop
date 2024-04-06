@@ -21,8 +21,11 @@ modules:
       # /var is deleted when building the container.
       # So I opted to use /opt for some things that normaly go into /usr/local
       # Also note that /opt/bin is in PATH while /opt/scripts in not
-      # Also copying the opt folder directly does not work for some reason
-      - opt/*: /opt/
+      # Also copying the entire opt directly does not work for some reason
+      - opt/bin: /opt/bin
+      - opt/scripts: /opt/scripts
+      - opt/wallpapers: /opt/wallpapers
+      - opt/colors: /opt/colors
 
   - type: rpm-ostree
     install:
