@@ -1,3 +1,5 @@
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/bin"
+
 GTK_THEME=Adwaita:dark
 QT_STYLE_OVERRIDE=adwaita-dark
 WLR_NO_HARDWARE_CURSORS=1

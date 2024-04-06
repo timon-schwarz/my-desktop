@@ -16,8 +16,11 @@ modules:
           # copies config/files/usr into your image's /usr.
           # put configuration files you want in /etc/ on a booted system 
           # in /usr/etc/ in the image. read more in files module reference.
-      - usrlocal: /var/usrlocal
-          # Fedora Atomic symlinks /usr/local to /var/usrlocal
+      - opt: /opt
+          # Fedora Atomic symlinks /usr/local to /var/usrlocal.
+          # /var is deleted when building the container.
+          # So I opted to use /opt for some things that normaly go into /usr/local
+          # Also note that /opt/bin is in PATH while /opt/scripts in not
 
   - type: rpm-ostree
     install:

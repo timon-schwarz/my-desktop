@@ -36,7 +36,7 @@
     },
 
     "custom/dunst": {
-        "exec": "/usr/share/custom/scripts/waybar_dunst.sh",
+        "exec": "/opt/scripts/waybar_dunst.sh",
         "on-click": "dunstctl set-paused toggle",
         "restart-interval": 1,
         "tooltip": false
