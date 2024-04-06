@@ -11,8 +11,14 @@ image-version: 39 # latest is also supported if you want new updates ASAP
 # you can include multiple instances of the same module
 modules:
   - type: containerfile
+    # Fedora Atomic symlinks /usr/local to /var/usrlocal.
+    # /var is deleted when building the container.
+    # So I opted to use /opt for some things that normaly go into /usr/local
+    # Also note that /opt/bin is in PATH while /opt/scripts in not
+    # Also copying the entire opt directly does not work for some reason
     snippets:
       - RUN rm -rf /opt
+      - COPY files/opt /opt
 
   - type: files
     files:
@@ -20,13 +26,6 @@ modules:
       # put configuration files you want in /etc/ on a booted system 
       # in /usr/etc/ in the image. read more in files module reference.
       - etc: /usr/etc
-          
-      # Fedora Atomic symlinks /usr/local to /var/usrlocal.
-      # /var is deleted when building the container.
-      # So I opted to use /opt for some things that normaly go into /usr/local
-      # Also note that /opt/bin is in PATH while /opt/scripts in not
-      # Also copying the entire opt directly does not work for some reason
-      - opt: /opt
 
   - type: rpm-ostree
     install:
