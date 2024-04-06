@@ -18,7 +18,7 @@ modules:
     # Also copying the entire opt directly does not work for some reason
     snippets:
       - RUN rm -rf /opt
-      - COPY ./files/opt /opt
+      - COPY .config/files/opt /opt
 
   - type: files
     files:
