@@ -1,0 +1,186 @@
+@import "../colors/mocha.css";
+
+/* margin: top right bottom left */
+/* Spacing outside the element */
+
+/* padding: top right bottom left */
+/* Spacing inside the element */
+
+* {
+  font-family: JetBrainsMono NF;
+  font-size: 17px;
+}
+
+window#waybar {
+  background-color: @crust;
+  color: @text;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-radius: 0px;
+  transition-duration: .5s;
+  margin: 16px 16px;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+#workspaces {
+    background: @crust;
+    margin: 5px 1px 6px 1px;
+    padding: 0px 1px;
+    border-radius: 15px;
+    border: 0px;
+    font-weight: bold;
+    font-style: normal;
+    opacity: 0.8;
+    font-size: 16px;
+    color: @text;
+}
+
+#workspaces button {
+    padding: 0px 5px;
+    margin: 4px 3px;
+    border-radius: 15px;
+    border: 0px;
+    color: @crust;
+    background-color: @teal;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.6;
+}
+
+#workspaces button.empty {
+    padding: 0px 5px;
+    margin: 4px 3px;
+    border-radius: 15px;
+    border: 0px;
+    color: @crust;
+    background-color: @rosewater;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.6;
+}
+
+#workspaces button.visible {
+    padding: 0px 5px;
+    margin: 4px 3px;
+    border-radius: 15px;
+    border: 0px;
+    color: @crust;
+    background-color: @sapphire;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.6;
+}
+
+#workspaces button.active {
+    color: @crust;
+    background: @sapphire;
+    border-radius: 15px;
+    min-width: 40px;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+}
+
+#workspaces button:hover {
+    color: @crust;
+    background: @sapphire;
+    border-radius: 15px;
+    opacity:1;
+}
+
+
+#idle_inhibitor,
+#custom-launcher,
+#clock,
+#battery,
+#cpu,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#memory,
+#custom-dunst,
+#custom-powermenu{
+  padding: 0px 20px;
+  margin: 7px 0px 10px 0px;
+  border-radius: 8px;
+  color: @crust;
+}
+
+#temperature{
+  background-color: @mauve;
+}
+
+#cpu {
+  background-color: @lavender;
+}
+
+#memory {
+  background-color: @blue;
+}
+
+#custom-dunst {
+  background-color: @sapphire;
+}
+
+#idle_inhibitor {
+  background-color: @sky;
+}
+
+#tray {
+  background-color: @teal;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+
+
+#battery {
+  background-color: @teal;
+}
+
+#bluetooth {
+  background-color: @sky;
+}
+
+#pulseaudio {
+  background-color: @sapphire;
+}
+
+#network {
+  background-color: @blue;
+}
+
+#clock {
+  background-color: @lavender;
+}
+
+#custom-powermenu {
+  padding: 0px 25px 0px 20px;
+  margin: 7px 20px 10px 0px;
+  background-color: @mauve;
+}
+
+@keyframes blink {
+  to {
+    background-color: rgba(30, 34, 42, 0.5);
+    color: #abb2bf;
+  }
+}
+
+#battery.critical:not(.charging) {
+  color: #f53c3c;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+label:focus {
+  background-color: #000000;
+}
