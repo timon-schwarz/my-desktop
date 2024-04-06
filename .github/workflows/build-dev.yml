@@ -1,4 +1,4 @@
-name: bluebuild
+name: build-dev
 on:
   schedule:
     - cron: "00 17 * * *" # build at 17:00 UTC every day 
@@ -7,12 +7,11 @@ on:
     paths-ignore: # don't rebuild if only documentation has changed
       - "**.md"
       
-  pull_request:
   workflow_dispatch: # allow manually triggering builds
 
 jobs:
-  bluebuild:
-    name: Build Custom Image
+  build-dev:
+    name: Build Custom Image using dev branch
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -25,7 +24,12 @@ jobs:
           # !! Add your recipes here 
           - recipe.yml
     steps:
-       # the build is fully handled by the reusable github action
+      # use dev branch
+      - uses: actions/checkout@v4
+        with:
+          ref: dev
+
+      # the build is fully handled by the reusable github action
       - name: Build Custom Image
         uses: blue-build/github-action@v1.3
         with:
