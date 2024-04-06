@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Define the path to the target file that we're going to check.
+global_config="/etc/xdg/wlogout/layout"
+user_config="~/.config/wlogout/layout"
+
+global_style="/etc/xdg/wlogout/style.css"
+user_style="~/.config/wlogout/style.css"
+
+# Use an if-else statement to check if the file exists.
+if [ -f "$user_config" ]
+then
+    exec wlogout --layout "$user_config" --css "$user_style"
+else
+    exec wlogout --layout "$global_config" --css "$global_style"
+fi

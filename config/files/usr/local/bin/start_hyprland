@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Define the path to the target file that we're going to check.
+global_config="/etc/xdg/hypr/hyprland.conf"
+user_config="~/.config/hypr/hyprland.conf"
+
+# Use an if-else statement to check if the file exists.
+if [ -f "$user_config" ]
+then
+    exec Hyprland --config "$user_config" "$1"
+else
+    exec Hyprland --config "$global_config" $1"
+fi

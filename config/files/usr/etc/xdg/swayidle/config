@@ -1,4 +1,4 @@
 timeout 10   'if pgrep swaylock; then hyprctl dispatch dpms off; fi' resume 'hyprctl dispatch dpms on'
-timeout 900  'swaylock -f'
+timeout 900  'start_swaylock -f'
 timeout 910  'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on'
-before-sleep 'swaylock -f'
+before-sleep 'start_swaylock'
