@@ -25,6 +25,7 @@ modules:
       - dbus-tools			# dbus support (which is used for inter process communication)
       - dbus-daemon			# dbus support (which is used for inter process communication)
       - wl-clipboard 			# clipboard management CLI
+      - clipman 			# clipboard history manager
 
     # window manager
       - hyprland 			# window manager
@@ -45,10 +46,6 @@ modules:
       - gnome-keyring			# secure secret storage
       - libsecret                       # keyring API that applications use
       - seahorse                        # keyring management GUI
-
-    # display manager
-    #  - sddm				# GUI
-    #  - sddm-themes			# themes
 
     # app launcher
       - rofi-wayland			# GUI
