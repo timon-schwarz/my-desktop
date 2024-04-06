@@ -12,15 +12,17 @@ image-version: 39 # latest is also supported if you want new updates ASAP
 modules:
   - type: files
     files:
-      - usr: /usr
-          # copies config/files/usr into your image's /usr.
-          # put configuration files you want in /etc/ on a booted system 
-          # in /usr/etc/ in the image. read more in files module reference.
-      - opt: /opt
-          # Fedora Atomic symlinks /usr/local to /var/usrlocal.
-          # /var is deleted when building the container.
-          # So I opted to use /opt for some things that normaly go into /usr/local
-          # Also note that /opt/bin is in PATH while /opt/scripts in not
+      # copies config/files/etc into your image's /usr/etc.
+      # put configuration files you want in /etc/ on a booted system 
+      # in /usr/etc/ in the image. read more in files module reference.
+      - etc: /usr/etc
+          
+      # Fedora Atomic symlinks /usr/local to /var/usrlocal.
+      # /var is deleted when building the container.
+      # So I opted to use /opt for some things that normaly go into /usr/local
+      # Also note that /opt/bin is in PATH while /opt/scripts in not
+      # Also copying the opt folder directly does not work for some reason
+      - opt/*: /opt/
 
   - type: rpm-ostree
     install:
