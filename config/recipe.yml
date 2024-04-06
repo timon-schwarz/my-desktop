@@ -10,6 +10,11 @@ image-version: 39 # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  modules:
+  - type: containerfile
+    snippets:
+      - RUN rm -rf /opt
+
   - type: files
     files:
       # copies config/files/etc into your image's /usr/etc.
@@ -22,10 +27,7 @@ modules:
       # So I opted to use /opt for some things that normaly go into /usr/local
       # Also note that /opt/bin is in PATH while /opt/scripts in not
       # Also copying the entire opt directly does not work for some reason
-      - opt/bin: /opt/bin
-      - opt/scripts: /opt/scripts
-      - opt/wallpapers: /opt/wallpapers
-      - opt/colors: /opt/colors
+      - opt: /opt
 
   - type: rpm-ostree
     install:
