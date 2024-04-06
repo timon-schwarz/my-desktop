@@ -2,12 +2,12 @@
 
 # Define the path to the target file that we're going to check.
 global_config="/etc/xdg/swaylock/config"
-user_config="~/.config/swaylock/config"
+user_config="$HOME/.config/swaylock/config"
 
 # Use an if-else statement to check if the file exists.
 if [ -f "$user_config" ]
 then
-    exec swaylock -C "$user_config" "$1"
+    exec swaylock -C "$user_config" "$@"
 else
-    exec swaylock -C "$global_config" "$1"
+    exec swaylock -C "$global_config" "$@"
 fi
