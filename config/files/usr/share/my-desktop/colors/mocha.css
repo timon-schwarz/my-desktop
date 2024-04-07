@@ -1,64 +1,64 @@
 :root {
-    --base   #1e1e2e;
-    --mantle #181825;
-    --crust  #11111b;
+    --base: #1e1e2e;
+    --mantle: #181825;
+    --crust: #11111b;
     
-    --text     #cdd6f4;
-    --subtext0 #a6adc8;
-    --subtext1 #bac2de;
+    --text: #cdd6f4;
+    --subtext0: #a6adc8;
+    --subtext1: #bac2de;
     
-    --surface0 #313244;
-    --surface1 #45475a;
-    --surface2 #585b70;
+    --surface0: #313244;
+    --surface1: #45475a;
+    --surface2: #585b70;
     
-    --overlay0 #6c7086;
-    --overlay1 #7f849c;
-    --overlay2 #9399b2;
+    --overlay0: #6c7086;
+    --overlay1: #7f849c;
+    --overlay2: #9399b2;
     
-    --blue      #89b4fa;
-    --lavender  #b4befe;
-    --sapphire  #74c7ec;
-    --sky       #89dceb;
-    --teal      #94e2d5;
-    --green     #a6e3a1;
-    --yellow    #f9e2af;
-    --peach     #fab387;
-    --maroon    #eba0ac;
-    --red       #f38ba8;
-    --mauve     #cba6f7;
-    --pink      #f5c2e7;
-    --flamingo  #f2cdcd;
-    --rosewater #f5e0dc;
+    --blue: #89b4fa;
+    --lavender: #b4befe;
+    --sapphire: #74c7ec;
+    --sky: #89dceb;
+    --teal: #94e2d5;
+    --green: #a6e3a1;
+    --yellow: #f9e2af;
+    --peach: #fab387;
+    --maroon: #eba0ac;
+    --red: #f38ba8;
+    --mauve: #cba6f7;
+    --pink: #f5c2e7;
+    --flamingo: #f2cdcd;
+    --rosewater: #f5e0dc;
 
 
-    --base_rgb   	30, 30, 46;
-    --mantle_rgb 	24, 24, 37;
-    --crust_rgb  	17, 17, 27;
+    --base_rgb: 30, 30, 46;
+    --mantle_rgb: 24, 24, 37;
+    --crust_rgb: 17, 17, 27;
     
-    --text_rgb     	205, 214, 244;
-    --subtext0_rgb 	166, 173, 200;
-    --subtext1_rgb 	186, 194, 222;
+    --text_rgb: 205, 214, 244;
+    --subtext0_rgb: 166, 173, 200;
+    --subtext1_rgb: 186, 194, 222;
     
-    --surface0_rgb 	49, 50, 68;
-    --surface1_rgb 	69, 71, 90;
-    --surface2_rgb 	88, 91, 112;
+    --surface0_rgb: 49, 50, 68;
+    --surface1_rgb: 69, 71, 90;
+    --surface2_rgb: 88, 91, 112;
     
-    --overlay0_rgb 	108, 112, 134;
-    --overlay1_rgb 	127, 132, 156;
-    --overlay2_rgb 	147, 153, 178;
+    --overlay0_rgb: 108, 112, 134;
+    --overlay1_rgb: 127, 132, 156;
+    --overlay2_rgb: 147, 153, 178;
     
-    --blue_rgb      	137, 180, 250;
-    --lavender_rgb  	180, 190, 254;
-    --sapphire_rgb  	116, 199, 236;
-    --sky_rgb       	137, 220, 235;
-    --teal_rgb      	148, 226, 213;
-    --green_rgb     	166, 227, 161;
-    --yellow_rgb    	249, 226, 175;
-    --peach_rgb     	250, 179, 135;
-    --maroon_rgb    	235, 160, 172;
-    --red_rgb       	243, 139, 168;
-    --mauve_rgb     	203, 166, 247;
-    --pink_rgb      	245, 194, 231;
-    --flamingo_rgb  	242, 205, 205;
-    --rosewater_rgb 	245, 224, 220;
+    --blue_rgb: 137, 180, 250;
+    --lavender_rgb: 180, 190, 254;
+    --sapphire_rgb: 116, 199, 236;
+    --sky_rgb: 137, 220, 235;
+    --teal_rgb: 148, 226, 213;
+    --green_rgb: 166, 227, 161;
+    --yellow_rgb: 249, 226, 175;
+    --peach_rgb: 250, 179, 135;
+    --maroon_rgb: 235, 160, 172;
+    --red_rgb: 243, 139, 168;
+    --mauve_rgb: 203, 166, 247;
+    --pink_rgb: 245, 194, 231;
+    --flamingo_rgb: 242, 205, 205;
+    --rosewater_rgb: 245, 224, 220;
 }
