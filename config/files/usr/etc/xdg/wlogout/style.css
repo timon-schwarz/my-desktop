@@ -1,71 +1,65 @@
 @import '/usr/share/my-desktop/colors/mocha.css';
 
 * {
-	font-family: "JetbrainMono NF", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+	font-family: "JetbrainMono NF";
 	background-image: none;
 	transition: 20ms;
 	box-shadow: none;
 }
 
 window {
-	background: url("/usr/share/my-desktop/wallpapers/wallpaper_blurred.png");
+	background-image: url("/usr/share/my-desktop/wallpapers/wallpaper_blurred.png");
 	background-size: cover;
+	background-color: rgba(0,0,0,0.5);
 }
 
 button {
-    	color: #FFFFFF;
-    	font-size: 32px;
+    	color: @crust;
+    	font-size: 200px;
+	padding: 30px;
+
+	margin: 80px;
+
+	border: 8px solid rgba(0,0,0,0);
 	border-style: solid;
+	border-radius: 20px;
 
     	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 30%;
+	background-color: @crust;
 
-	background-color: @curst_a07
-	border: 3px solid #FFFFFF;
     	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 button:focus,
 button:active,
 button:hover {
-	border: 3px solid rgb(34, 221, 238);
-	background-color: @crust_a1
+	border: 8px solid @crust;
 }
 
 #lock {
-	margin: 20px;
-	border-radius: 20px;
-	background-image: image(url("lock.png"));
+	background-color: @teal;
 }
 
 #logout {
-	margin: 20px;
-	border-radius: 20px;
-	background-image: image(url("logout.png"));
-}
-
-#suspend {
-	margin: 20px;
-	border-radius: 20px;
-	background-image: image(url("suspend.png"));
-}
-
-#hibernate {
-	margin: 20px;
-	border-radius: 20px;
-	background-image: image(url("hibernate.png"));
-}
-
-#shutdown {
-	margin: 20px;
-	border-radius: 20px;
-	background-image: image(url("shutdown.png"));
+	background-color: @sky;
 }
 
 #reboot {
-	margin: 20px;
-	border-radius: 20px;
-	background-image: image(url("reboot.png"));
+	background-color: @sapphire;
 }
+
+#suspend {
+	background-color: @blue;
+}
+
+#hibernate {
+	background-color: @lavender;
+}
+
+#shutdown {
+	background-color: @mauve;
+}
+
 
