@@ -12,7 +12,7 @@
     "custom/launcher": {
         "interval": "once",
         "format": "",
-        "on-click": "wofi --show drun",
+        "on-click": "toggle_wofi",
         "tooltip": false
       },
   

@@ -41,7 +41,7 @@ modules:
       - seahorse                        # keyring management GUI
 
     # app launcher
-      - rofi-wayland			# GUI
+      - wofi    			# GUI
       
     # disk control
       - gnome-disk-utility		# GUI
