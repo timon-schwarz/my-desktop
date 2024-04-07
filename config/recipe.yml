@@ -47,7 +47,6 @@ modules:
       - gnome-disk-utility		# GUI
     
     # editor
-      - vim             		# I use neovim instead but i fell like vim should be on every linux machine...
       - neovim          		# GUI
       
     # sound
@@ -91,7 +90,7 @@ modules:
       - wlogout                         # logout, reboot, shutdown etc menu GUI
      
      # terminal
-      - kitty                           # Comes pre installed with hyprland
+      - foot                           # Terminal emulator
      
      # notifications
       - dunst                           # Notification daemon
@@ -112,6 +111,9 @@ modules:
         
       # fonts
       - fontawesome-fonts-all 		# It is nice to have some fonts ready when needed
+    remove:
+      - kitty                           # Comes with hyprland but I prefer foot
+
 
   - type: fonts
     fonts:
