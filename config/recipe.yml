@@ -90,7 +90,7 @@ modules:
       - wlogout                         # logout, reboot, shutdown etc menu GUI
      
      # terminal
-      - foot                           # Terminal emulator
+      - kitty                           # Terminal emulator
      
      # notifications
       - dunst                           # Notification daemon
