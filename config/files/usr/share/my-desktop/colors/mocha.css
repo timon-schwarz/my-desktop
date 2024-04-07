@@ -45,7 +45,7 @@
 @define-color overlay0_a01 	rgba(108, 112, 134, 0.1);
 @define-color overlay1_a01 	rgba(127, 132, 156, 0.1);
 @define-color overlay2_a01 	rgba(147, 153, 178, 0.1);
-@define-color 
+
 @define-color blue_a01     	rgba(137, 180, 250, 0.1);
 @define-color lavender_a01 	rgba(180, 190, 254, 0.1);
 @define-color sapphire_a01 	rgba(116, 199, 236, 0.1);
@@ -77,7 +77,7 @@
 @define-color overlay0_a02 	rgba(108, 112, 134, 0.2);
 @define-color overlay1_a02 	rgba(127, 132, 156, 0.2);
 @define-color overlay2_a02 	rgba(147, 153, 178, 0.2);
-@define-color 
+
 @define-color blue_a02     	rgba(137, 180, 250, 0.2);
 @define-color lavender_a02 	rgba(180, 190, 254, 0.2);
 @define-color sapphire_a02 	rgba(116, 199, 236, 0.2);
@@ -109,7 +109,7 @@
 @define-color overlay0_a03 	rgba(108, 112, 134, 0.3);
 @define-color overlay1_a03 	rgba(127, 132, 156, 0.3);
 @define-color overlay2_a03 	rgba(147, 153, 178, 0.3);
-@define-color 
+
 @define-color blue_a03     	rgba(137, 180, 250, 0.3);
 @define-color lavender_a03 	rgba(180, 190, 254, 0.3);
 @define-color sapphire_a03 	rgba(116, 199, 236, 0.3);
@@ -141,7 +141,7 @@
 @define-color overlay0_a04 	rgba(108, 112, 134, 0.4);
 @define-color overlay1_a04 	rgba(127, 132, 156, 0.4);
 @define-color overlay2_a04 	rgba(147, 153, 178, 0.4);
-@define-color 
+
 @define-color blue_a04     	rgba(137, 180, 250, 0.4);
 @define-color lavender_a04 	rgba(180, 190, 254, 0.4);
 @define-color sapphire_a04 	rgba(116, 199, 236, 0.4);
@@ -173,7 +173,7 @@
 @define-color overlay0_a05 	rgba(108, 112, 134, 0.5);
 @define-color overlay1_a05 	rgba(127, 132, 156, 0.5);
 @define-color overlay2_a05 	rgba(147, 153, 178, 0.5);
-@define-color 
+
 @define-color blue_a05     	rgba(137, 180, 250, 0.5);
 @define-color lavender_a05 	rgba(180, 190, 254, 0.5);
 @define-color sapphire_a05 	rgba(116, 199, 236, 0.5);
@@ -205,7 +205,7 @@
 @define-color overlay0_a06 	rgba(108, 112, 134, 0.6);
 @define-color overlay1_a06 	rgba(127, 132, 156, 0.6);
 @define-color overlay2_a06 	rgba(147, 153, 178, 0.6);
-@define-color 
+
 @define-color blue_a06     	rgba(137, 180, 250, 0.6);
 @define-color lavender_a06 	rgba(180, 190, 254, 0.6);
 @define-color sapphire_a06 	rgba(116, 199, 236, 0.6);
@@ -237,7 +237,7 @@
 @define-color overlay0_a07 	rgba(108, 112, 134, 0.7);
 @define-color overlay1_a07 	rgba(127, 132, 156, 0.7);
 @define-color overlay2_a07 	rgba(147, 153, 178, 0.7);
-@define-color 
+
 @define-color blue_a07     	rgba(137, 180, 250, 0.7);
 @define-color lavender_a07 	rgba(180, 190, 254, 0.7);
 @define-color sapphire_a07 	rgba(116, 199, 236, 0.7);
@@ -269,7 +269,7 @@
 @define-color overlay0_a08 	rgba(108, 112, 134, 0.8);
 @define-color overlay1_a08 	rgba(127, 132, 156, 0.8);
 @define-color overlay2_a08 	rgba(147, 153, 178, 0.8);
-@define-color 
+
 @define-color blue_a08     	rgba(137, 180, 250, 0.8);
 @define-color lavender_a08 	rgba(180, 190, 254, 0.8);
 @define-color sapphire_a08 	rgba(116, 199, 236, 0.8);
@@ -301,7 +301,7 @@
 @define-color overlay0_a09 	rgba(108, 112, 134, 0.9);
 @define-color overlay1_a09 	rgba(127, 132, 156, 0.9);
 @define-color overlay2_a09 	rgba(147, 153, 178, 0.9);
-@define-color 
+
 @define-color blue_a09     	rgba(137, 180, 250, 0.9);
 @define-color lavender_a09 	rgba(180, 190, 254, 0.9);
 @define-color sapphire_a09 	rgba(116, 199, 236, 0.9);
@@ -333,7 +333,7 @@
 @define-color overlay0_a1 	rgba(108, 112, 134, 1);
 @define-color overlay1_a1 	rgba(127, 132, 156, 1);
 @define-color overlay2_a1 	rgba(147, 153, 178, 1);
-@define-color 
+
 @define-color blue_a1     	rgba(137, 180, 250, 1);
 @define-color lavender_a1 	rgba(180, 190, 254, 1);
 @define-color sapphire_a1 	rgba(116, 199, 236, 1);
