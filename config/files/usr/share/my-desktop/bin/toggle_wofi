@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Define the path to the target file that we're going to check.
+global_config="/etc/xdg/wofi/config"
+user_config="$HOME/.config/wofi/config"
+
+global_style="/etc/xdg/wofi/style.css"
+user_style="$HOME/.config/wofi/style.css"
+
+# Use an if-else statement to check if wofi is already open or not.
+if [[ ! $(pidof wofi) ]]; then
+    # Use an if-else statement to check if the file exists.
+    if [ -f "$user_config" ]
+    then
+        exec wofi --conf "$user_config" --style "$user_style" -a "$@"
+    else
+        exec wofi --conf "$global_config" --style "$global_style" -a "$@"
+    fi
+else
+    pkill wofi
+fi
