@@ -144,7 +144,7 @@
   
     "custom/powermenu": {
         "format": "",
-        "on-click": "wlogout",
+        "on-click": "start_wlogout",
         "tooltip": false
     }
 }
