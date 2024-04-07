@@ -100,7 +100,7 @@
         "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}/{cidr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
         "tooltip-format-disconnected": "󰪎 Disconnected",
         "max-length": 50,
-        "on-click": "kitty --hold sh -c \"sleep 0.5 && nmtui\""
+        "on-click": "start_nmtui"
     },
 
   
