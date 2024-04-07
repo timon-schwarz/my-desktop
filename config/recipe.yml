@@ -10,17 +10,6 @@ image-version: 39 # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - type: files
-    files:
-      # copies config/files/usr into your image's /usr.
-      # put configuration files you want in /etc/ on a booted system 
-      # in /usr/etc/ in the image. read more in files module reference.
-
-      # Fedora Atomic symlinks /usr/local to /var/usrlocal.
-      # /var and /opt are deleted when building the container.
-      # So I opted to use /usr/share/my-desktop for some things that normaly go into /usr/local
-      - usr: /usr
-
   - type: rpm-ostree
     install:
     # other
@@ -139,5 +128,15 @@ modules:
         - Poppins
         - Raleway
 
+  - type: files
+    files:
+      # copies config/files/usr into your image's /usr.
+      # put configuration files you want in /etc/ on a booted system 
+      # in /usr/etc/ in the image. read more in files module reference.
+
+      # Fedora Atomic symlinks /usr/local to /var/usrlocal.
+      # /var and /opt are deleted when building the container.
+      # So I opted to use /usr/share/my-desktop for some things that normaly go into /usr/local
+      - usr: /usr
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
