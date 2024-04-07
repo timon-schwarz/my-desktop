@@ -2,10 +2,10 @@
 
 # Define the path to the target file that we're going to check.
 global_config="/etc/xdg/waybar/config"
-user_config="$HOME/.config/wayvar/config"
+user_config="$HOME/.config/waybar/config"
 
 global_style="/etc/xdg/waybar/style.css"
-user_style="$HOME/config/waybar/style.css"
+user_style="$HOME/.config/waybar/style.css"
 
 # Use an if-else statement to check if the file exists.
 if [ -f "$user_config" ]
