@@ -1,64 +1,350 @@
-* {
-    --base: #1e1e2e;
-    --mantle: #181825;
-    --crust: #11111b;
-    
-    --text: #cdd6f4;
-    --subtext0: #a6adc8;
-    --subtext1: #bac2de;
-    
-    --surface0: #313244;
-    --surface1: #45475a;
-    --surface2: #585b70;
-    
-    --overlay0: #6c7086;
-    --overlay1: #7f849c;
-    --overlay2: #9399b2;
-    
-    --blue: #89b4fa;
-    --lavender: #b4befe;
-    --sapphire: #74c7ec;
-    --sky: #89dceb;
-    --teal: #94e2d5;
-    --green: #a6e3a1;
-    --yellow: #f9e2af;
-    --peach: #fab387;
-    --maroon: #eba0ac;
-    --red: #f38ba8;
-    --mauve: #cba6f7;
-    --pink: #f5c2e7;
-    --flamingo: #f2cdcd;
-    --rosewater: #f5e0dc;
+@define-color base 	  	rgb(30, 30, 46);
+@define-color mantle	 	rgb(24, 24, 37);
+@define-color crust  		rgb(17, 17, 27);
+
+@define-color text	     	rgb(205, 214, 244);
+@define-color subtext0	 	rgb(166, 173, 200);
+@define-color subtext1	 	rgb(186, 194, 222);
+
+@define-color surface0	 	rgb(49, 50, 68);
+@define-color surface1	 	rgb(69, 71, 90);
+@define-color surface2	 	rgb(88, 91, 112);
+
+@define-color overlay0		rgb(108, 112, 134);
+@define-color overlay1		rgb(127, 132, 156);
+@define-color overlay2		rgb(147, 153, 178);
+
+@define-color blue	     	rgb(137, 180, 250);
+@define-color lavender	 	rgb(180, 190, 254);
+@define-color sapphire	 	rgb(116, 199, 236);
+@define-color sky	      	rgb(137, 220, 235);
+@define-color teal	     	rgb(148, 226, 213);
+@define-color green	    	rgb(166, 227, 161);
+@define-color yellow	   	rgb(249, 226, 175);
+@define-color peach	    	rgb(250, 179, 135);
+@define-color maroon	   	rgb(235, 160, 172);
+@define-color red	      	rgb(243, 139, 168);
+@define-color mauve	    	rgb(203, 166, 247);
+@define-color pink	     	rgb(245, 194, 231);
+@define-color flamingo	 	rgb(242, 205, 205);
+@define-color rosewater		rgb(245, 224, 220);
 
 
-    --base_rgb: 30, 30, 46;
-    --mantle_rgb: 24, 24, 37;
-    --crust_rgb: 17, 17, 27;
-    
-    --text_rgb: 205, 214, 244;
-    --subtext0_rgb: 166, 173, 200;
-    --subtext1_rgb: 186, 194, 222;
-    
-    --surface0_rgb: 49, 50, 68;
-    --surface1_rgb: 69, 71, 90;
-    --surface2_rgb: 88, 91, 112;
-    
-    --overlay0_rgb: 108, 112, 134;
-    --overlay1_rgb: 127, 132, 156;
-    --overlay2_rgb: 147, 153, 178;
-    
-    --blue_rgb: 137, 180, 250;
-    --lavender_rgb: 180, 190, 254;
-    --sapphire_rgb: 116, 199, 236;
-    --sky_rgb: 137, 220, 235;
-    --teal_rgb: 148, 226, 213;
-    --green_rgb: 166, 227, 161;
-    --yellow_rgb: 249, 226, 175;
-    --peach_rgb: 250, 179, 135;
-    --maroon_rgb: 235, 160, 172;
-    --red_rgb: 243, 139, 168;
-    --mauve_rgb: 203, 166, 247;
-    --pink_rgb: 245, 194, 231;
-    --flamingo_rgb: 242, 205, 205;
-    --rosewater_rgb: 245, 224, 220;
-}
+@define-color base_a01   	rgba(30, 30, 46, 0.1);
+@define-color mantle_a01 	rgba(24, 24, 37, 0.1);
+@define-color crust_a01  	rgba(17, 17, 27, 0.1);
+ 
+@define-color text_a01     	rgba(205, 214, 244, 0.1);
+@define-color subtext0_a01 	rgba(166, 173, 200, 0.1);
+@define-color subtext1_a01 	rgba(186, 194, 222, 0.1);
+
+@define-color surface0_a01 	rgba(49, 50, 68, 0.1);
+@define-color surface1_a01 	rgba(69, 71, 90, 0.1);
+@define-color surface2_a01 	rgba(88, 91, 112, 0.1);
+
+@define-color overlay0_a01 	rgba(108, 112, 134, 0.1);
+@define-color overlay1_a01 	rgba(127, 132, 156, 0.1);
+@define-color overlay2_a01 	rgba(147, 153, 178, 0.1);
+@define-color 
+@define-color blue_a01     	rgba(137, 180, 250, 0.1);
+@define-color lavender_a01 	rgba(180, 190, 254, 0.1);
+@define-color sapphire_a01 	rgba(116, 199, 236, 0.1);
+@define-color sky_a01      	rgba(137, 220, 235, 0.1);
+@define-color teal_a01     	rgba(148, 226, 213, 0.1);
+@define-color green_a01    	rgba(166, 227, 161, 0.1);
+@define-color yellow_a01   	rgba(249, 226, 175, 0.1);
+@define-color peach_a01    	rgba(250, 179, 135, 0.1);
+@define-color maroon_a01   	rgba(235, 160, 172, 0.1);
+@define-color red_a01      	rgba(243, 139, 168, 0.1);
+@define-color mauve_a01    	rgba(203, 166, 247, 0.1);
+@define-color pink_a01     	rgba(245, 194, 231, 0.1);
+@define-color flamingo_a01 	rgba(242, 205, 205, 0.1);
+@define-color rosewater_a01	rgba(245, 224, 220, 0.1);
+
+
+@define-color base_a02   	rgba(30, 30, 46, 0.2);
+@define-color mantle_a02 	rgba(24, 24, 37, 0.2);
+@define-color crust_a02  	rgba(17, 17, 27, 0.2);
+ 
+@define-color text_a02     	rgba(205, 214, 244, 0.2);
+@define-color subtext0_a02 	rgba(166, 173, 200, 0.2);
+@define-color subtext1_a02 	rgba(186, 194, 222, 0.2);
+
+@define-color surface0_a02 	rgba(49, 50, 68, 0.2);
+@define-color surface1_a02 	rgba(69, 71, 90, 0.2);
+@define-color surface2_a02 	rgba(88, 91, 112, 0.2);
+
+@define-color overlay0_a02 	rgba(108, 112, 134, 0.2);
+@define-color overlay1_a02 	rgba(127, 132, 156, 0.2);
+@define-color overlay2_a02 	rgba(147, 153, 178, 0.2);
+@define-color 
+@define-color blue_a02     	rgba(137, 180, 250, 0.2);
+@define-color lavender_a02 	rgba(180, 190, 254, 0.2);
+@define-color sapphire_a02 	rgba(116, 199, 236, 0.2);
+@define-color sky_a02      	rgba(137, 220, 235, 0.2);
+@define-color teal_a02     	rgba(148, 226, 213, 0.2);
+@define-color green_a02    	rgba(166, 227, 161, 0.2);
+@define-color yellow_a02   	rgba(249, 226, 175, 0.2);
+@define-color peach_a02    	rgba(250, 179, 135, 0.2);
+@define-color maroon_a02   	rgba(235, 160, 172, 0.2);
+@define-color red_a02      	rgba(243, 139, 168, 0.2);
+@define-color mauve_a02    	rgba(203, 166, 247, 0.2);
+@define-color pink_a02     	rgba(245, 194, 231, 0.2);
+@define-color flamingo_a02 	rgba(242, 205, 205, 0.2);
+@define-color rosewater_a02	rgba(245, 224, 220, 0.2);
+
+
+@define-color base_a03   	rgba(30, 30, 46, 0.3);
+@define-color mantle_a03 	rgba(24, 24, 37, 0.3);
+@define-color crust_a03  	rgba(17, 17, 27, 0.3);
+ 
+@define-color text_a03     	rgba(205, 214, 244, 0.3);
+@define-color subtext0_a03 	rgba(166, 173, 200, 0.3);
+@define-color subtext1_a03 	rgba(186, 194, 222, 0.3);
+
+@define-color surface0_a03 	rgba(49, 50, 68, 0.3);
+@define-color surface1_a03 	rgba(69, 71, 90, 0.3);
+@define-color surface2_a03 	rgba(88, 91, 112, 0.3);
+
+@define-color overlay0_a03 	rgba(108, 112, 134, 0.3);
+@define-color overlay1_a03 	rgba(127, 132, 156, 0.3);
+@define-color overlay2_a03 	rgba(147, 153, 178, 0.3);
+@define-color 
+@define-color blue_a03     	rgba(137, 180, 250, 0.3);
+@define-color lavender_a03 	rgba(180, 190, 254, 0.3);
+@define-color sapphire_a03 	rgba(116, 199, 236, 0.3);
+@define-color sky_a03      	rgba(137, 220, 235, 0.3);
+@define-color teal_a03     	rgba(148, 226, 213, 0.3);
+@define-color green_a03    	rgba(166, 227, 161, 0.3);
+@define-color yellow_a03   	rgba(249, 226, 175, 0.3);
+@define-color peach_a03    	rgba(250, 179, 135, 0.3);
+@define-color maroon_a03   	rgba(235, 160, 172, 0.3);
+@define-color red_a03      	rgba(243, 139, 168, 0.3);
+@define-color mauve_a03    	rgba(203, 166, 247, 0.3);
+@define-color pink_a03     	rgba(245, 194, 231, 0.3);
+@define-color flamingo_a03 	rgba(242, 205, 205, 0.3);
+@define-color rosewater_a03	rgba(245, 224, 220, 0.3);
+
+
+@define-color base_a04   	rgba(30, 30, 46, 0.4);
+@define-color mantle_a04 	rgba(24, 24, 37, 0.4);
+@define-color crust_a04  	rgba(17, 17, 27, 0.4);
+ 
+@define-color text_a04     	rgba(205, 214, 244, 0.4);
+@define-color subtext0_a04 	rgba(166, 173, 200, 0.4);
+@define-color subtext1_a04 	rgba(186, 194, 222, 0.4);
+
+@define-color surface0_a04 	rgba(49, 50, 68, 0.4);
+@define-color surface1_a04 	rgba(69, 71, 90, 0.4);
+@define-color surface2_a04 	rgba(88, 91, 112, 0.4);
+
+@define-color overlay0_a04 	rgba(108, 112, 134, 0.4);
+@define-color overlay1_a04 	rgba(127, 132, 156, 0.4);
+@define-color overlay2_a04 	rgba(147, 153, 178, 0.4);
+@define-color 
+@define-color blue_a04     	rgba(137, 180, 250, 0.4);
+@define-color lavender_a04 	rgba(180, 190, 254, 0.4);
+@define-color sapphire_a04 	rgba(116, 199, 236, 0.4);
+@define-color sky_a04      	rgba(137, 220, 235, 0.4);
+@define-color teal_a04     	rgba(148, 226, 213, 0.4);
+@define-color green_a04    	rgba(166, 227, 161, 0.4);
+@define-color yellow_a04   	rgba(249, 226, 175, 0.4);
+@define-color peach_a04    	rgba(250, 179, 135, 0.4);
+@define-color maroon_a04   	rgba(235, 160, 172, 0.4);
+@define-color red_a04      	rgba(243, 139, 168, 0.4);
+@define-color mauve_a04    	rgba(203, 166, 247, 0.4);
+@define-color pink_a04     	rgba(245, 194, 231, 0.4);
+@define-color flamingo_a04 	rgba(242, 205, 205, 0.4);
+@define-color rosewater_a04	rgba(245, 224, 220, 0.4);
+
+
+@define-color base_a05   	rgba(30, 30, 46, 0.5);
+@define-color mantle_a05 	rgba(24, 24, 37, 0.5);
+@define-color crust_a05  	rgba(17, 17, 27, 0.5);
+ 
+@define-color text_a05     	rgba(205, 214, 244, 0.5);
+@define-color subtext0_a05 	rgba(166, 173, 200, 0.5);
+@define-color subtext1_a05 	rgba(186, 194, 222, 0.5);
+
+@define-color surface0_a05 	rgba(49, 50, 68, 0.5);
+@define-color surface1_a05 	rgba(69, 71, 90, 0.5);
+@define-color surface2_a05 	rgba(88, 91, 112, 0.5);
+
+@define-color overlay0_a05 	rgba(108, 112, 134, 0.5);
+@define-color overlay1_a05 	rgba(127, 132, 156, 0.5);
+@define-color overlay2_a05 	rgba(147, 153, 178, 0.5);
+@define-color 
+@define-color blue_a05     	rgba(137, 180, 250, 0.5);
+@define-color lavender_a05 	rgba(180, 190, 254, 0.5);
+@define-color sapphire_a05 	rgba(116, 199, 236, 0.5);
+@define-color sky_a05      	rgba(137, 220, 235, 0.5);
+@define-color teal_a05     	rgba(148, 226, 213, 0.5);
+@define-color green_a05    	rgba(166, 227, 161, 0.5);
+@define-color yellow_a05   	rgba(249, 226, 175, 0.5);
+@define-color peach_a05    	rgba(250, 179, 135, 0.5);
+@define-color maroon_a05   	rgba(235, 160, 172, 0.5);
+@define-color red_a05      	rgba(243, 139, 168, 0.5);
+@define-color mauve_a05    	rgba(203, 166, 247, 0.5);
+@define-color pink_a05     	rgba(245, 194, 231, 0.5);
+@define-color flamingo_a05 	rgba(242, 205, 205, 0.5);
+@define-color rosewater_a05	rgba(245, 224, 220, 0.5);
+
+
+@define-color base_a06   	rgba(30, 30, 46, 0.6);
+@define-color mantle_a06 	rgba(24, 24, 37, 0.6);
+@define-color crust_a06  	rgba(17, 17, 27, 0.6);
+ 
+@define-color text_a06     	rgba(205, 214, 244, 0.6);
+@define-color subtext0_a06 	rgba(166, 173, 200, 0.6);
+@define-color subtext1_a06 	rgba(186, 194, 222, 0.6);
+
+@define-color surface0_a06 	rgba(49, 50, 68, 0.6);
+@define-color surface1_a06 	rgba(69, 71, 90, 0.6);
+@define-color surface2_a06 	rgba(88, 91, 112, 0.6);
+
+@define-color overlay0_a06 	rgba(108, 112, 134, 0.6);
+@define-color overlay1_a06 	rgba(127, 132, 156, 0.6);
+@define-color overlay2_a06 	rgba(147, 153, 178, 0.6);
+@define-color 
+@define-color blue_a06     	rgba(137, 180, 250, 0.6);
+@define-color lavender_a06 	rgba(180, 190, 254, 0.6);
+@define-color sapphire_a06 	rgba(116, 199, 236, 0.6);
+@define-color sky_a06      	rgba(137, 220, 235, 0.6);
+@define-color teal_a06     	rgba(148, 226, 213, 0.6);
+@define-color green_a06    	rgba(166, 227, 161, 0.6);
+@define-color yellow_a06   	rgba(249, 226, 175, 0.6);
+@define-color peach_a06    	rgba(250, 179, 135, 0.6);
+@define-color maroon_a06   	rgba(235, 160, 172, 0.6);
+@define-color red_a06      	rgba(243, 139, 168, 0.6);
+@define-color mauve_a06    	rgba(203, 166, 247, 0.6);
+@define-color pink_a06     	rgba(245, 194, 231, 0.6);
+@define-color flamingo_a06 	rgba(242, 205, 205, 0.6);
+@define-color rosewater_a06	rgba(245, 224, 220, 0.6);
+
+
+@define-color base_a07   	rgba(30, 30, 46, 0.7);
+@define-color mantle_a07 	rgba(24, 24, 37, 0.7);
+@define-color crust_a07  	rgba(17, 17, 27, 0.7);
+ 
+@define-color text_a07     	rgba(205, 214, 244, 0.7);
+@define-color subtext0_a07 	rgba(166, 173, 200, 0.7);
+@define-color subtext1_a07 	rgba(186, 194, 222, 0.7);
+
+@define-color surface0_a07 	rgba(49, 50, 68, 0.7);
+@define-color surface1_a07 	rgba(69, 71, 90, 0.7);
+@define-color surface2_a07 	rgba(88, 91, 112, 0.7);
+
+@define-color overlay0_a07 	rgba(108, 112, 134, 0.7);
+@define-color overlay1_a07 	rgba(127, 132, 156, 0.7);
+@define-color overlay2_a07 	rgba(147, 153, 178, 0.7);
+@define-color 
+@define-color blue_a07     	rgba(137, 180, 250, 0.7);
+@define-color lavender_a07 	rgba(180, 190, 254, 0.7);
+@define-color sapphire_a07 	rgba(116, 199, 236, 0.7);
+@define-color sky_a07      	rgba(137, 220, 235, 0.7);
+@define-color teal_a07     	rgba(148, 226, 213, 0.7);
+@define-color green_a07    	rgba(166, 227, 161, 0.7);
+@define-color yellow_a07   	rgba(249, 226, 175, 0.7);
+@define-color peach_a07    	rgba(250, 179, 135, 0.7);
+@define-color maroon_a07   	rgba(235, 160, 172, 0.7);
+@define-color red_a07      	rgba(243, 139, 168, 0.7);
+@define-color mauve_a07    	rgba(203, 166, 247, 0.7);
+@define-color pink_a07     	rgba(245, 194, 231, 0.7);
+@define-color flamingo_a07 	rgba(242, 205, 205, 0.7);
+@define-color rosewater_a07	rgba(245, 224, 220, 0.7);
+
+
+@define-color base_a08   	rgba(30, 30, 46, 0.8);
+@define-color mantle_a08 	rgba(24, 24, 37, 0.8);
+@define-color crust_a08  	rgba(17, 17, 27, 0.8);
+ 
+@define-color text_a08     	rgba(205, 214, 244, 0.8);
+@define-color subtext0_a08 	rgba(166, 173, 200, 0.8);
+@define-color subtext1_a08 	rgba(186, 194, 222, 0.8);
+
+@define-color surface0_a08 	rgba(49, 50, 68, 0.8);
+@define-color surface1_a08 	rgba(69, 71, 90, 0.8);
+@define-color surface2_a08 	rgba(88, 91, 112, 0.8);
+
+@define-color overlay0_a08 	rgba(108, 112, 134, 0.8);
+@define-color overlay1_a08 	rgba(127, 132, 156, 0.8);
+@define-color overlay2_a08 	rgba(147, 153, 178, 0.8);
+@define-color 
+@define-color blue_a08     	rgba(137, 180, 250, 0.8);
+@define-color lavender_a08 	rgba(180, 190, 254, 0.8);
+@define-color sapphire_a08 	rgba(116, 199, 236, 0.8);
+@define-color sky_a08      	rgba(137, 220, 235, 0.8);
+@define-color teal_a08     	rgba(148, 226, 213, 0.8);
+@define-color green_a08    	rgba(166, 227, 161, 0.8);
+@define-color yellow_a08   	rgba(249, 226, 175, 0.8);
+@define-color peach_a08    	rgba(250, 179, 135, 0.8);
+@define-color maroon_a08   	rgba(235, 160, 172, 0.8);
+@define-color red_a08      	rgba(243, 139, 168, 0.8);
+@define-color mauve_a08    	rgba(203, 166, 247, 0.8);
+@define-color pink_a08     	rgba(245, 194, 231, 0.8);
+@define-color flamingo_a08 	rgba(242, 205, 205, 0.8);
+@define-color rosewater_a08	rgba(245, 224, 220, 0.8);
+
+
+@define-color base_a09   	rgba(30, 30, 46, 0.9);
+@define-color mantle_a09 	rgba(24, 24, 37, 0.9);
+@define-color crust_a09  	rgba(17, 17, 27, 0.9);
+ 
+@define-color text_a09     	rgba(205, 214, 244, 0.9);
+@define-color subtext0_a09 	rgba(166, 173, 200, 0.9);
+@define-color subtext1_a09 	rgba(186, 194, 222, 0.9);
+
+@define-color surface0_a09 	rgba(49, 50, 68, 0.9);
+@define-color surface1_a09 	rgba(69, 71, 90, 0.9);
+@define-color surface2_a09 	rgba(88, 91, 112, 0.9);
+
+@define-color overlay0_a09 	rgba(108, 112, 134, 0.9);
+@define-color overlay1_a09 	rgba(127, 132, 156, 0.9);
+@define-color overlay2_a09 	rgba(147, 153, 178, 0.9);
+@define-color 
+@define-color blue_a09     	rgba(137, 180, 250, 0.9);
+@define-color lavender_a09 	rgba(180, 190, 254, 0.9);
+@define-color sapphire_a09 	rgba(116, 199, 236, 0.9);
+@define-color sky_a09      	rgba(137, 220, 235, 0.9);
+@define-color teal_a09     	rgba(148, 226, 213, 0.9);
+@define-color green_a09    	rgba(166, 227, 161, 0.9);
+@define-color yellow_a09   	rgba(249, 226, 175, 0.9);
+@define-color peach_a09    	rgba(250, 179, 135, 0.9);
+@define-color maroon_a09   	rgba(235, 160, 172, 0.9);
+@define-color red_a09      	rgba(243, 139, 168, 0.9);
+@define-color mauve_a09    	rgba(203, 166, 247, 0.9);
+@define-color pink_a09     	rgba(245, 194, 231, 0.9);
+@define-color flamingo_a09 	rgba(242, 205, 205, 0.9);
+@define-color rosewater_a09	rgba(245, 224, 220, 0.9);
+
+
+@define-color base_a1   	rgba(30, 30, 46, 1);
+@define-color mantle_a1 	rgba(24, 24, 37, 1);
+@define-color crust_a1  	rgba(17, 17, 27, 1);
+ 
+@define-color text_a1     	rgba(205, 214, 244, 1);
+@define-color subtext0_a1 	rgba(166, 173, 200, 1);
+@define-color subtext1_a1 	rgba(186, 194, 222, 1);
+
+@define-color surface0_a1 	rgba(49, 50, 68, 1);
+@define-color surface1_a1 	rgba(69, 71, 90, 1);
+@define-color surface2_a1 	rgba(88, 91, 112, 1);
+
+@define-color overlay0_a1 	rgba(108, 112, 134, 1);
+@define-color overlay1_a1 	rgba(127, 132, 156, 1);
+@define-color overlay2_a1 	rgba(147, 153, 178, 1);
+@define-color 
+@define-color blue_a1     	rgba(137, 180, 250, 1);
+@define-color lavender_a1 	rgba(180, 190, 254, 1);
+@define-color sapphire_a1 	rgba(116, 199, 236, 1);
+@define-color sky_a1      	rgba(137, 220, 235, 1);
+@define-color teal_a1     	rgba(148, 226, 213, 1);
+@define-color green_a1    	rgba(166, 227, 161, 1);
+@define-color yellow_a1   	rgba(249, 226, 175, 1);
+@define-color peach_a1    	rgba(250, 179, 135, 1);
+@define-color maroon_a1   	rgba(235, 160, 172, 1);
+@define-color red_a1      	rgba(243, 139, 168, 1);
+@define-color mauve_a1    	rgba(203, 166, 247, 1);
+@define-color pink_a1     	rgba(245, 194, 231, 1);
+@define-color flamingo_a1 	rgba(242, 205, 205, 1);
+@define-color rosewater_a1	rgba(245, 224, 220, 1);

@@ -5,17 +5,15 @@
 	background-image: none;
 	transition: 20ms;
 	box-shadow: none;
-
 }
-	
+
 window {
 	background: url("/usr/share/my-desktop/wallpapers/wallpaper_blurred.png");
 	background-size: cover;
 }
 
-
 button {
-    	color: var(--crust);
+    	color: #FFFFFF;
     	font-size: 32px;
 	border-style: solid;
 
@@ -23,14 +21,16 @@ button {
 	background-position: center;
 	background-size: 30%;
 
-	background-color: rgba(var(--crust_rgb), 0.7);
+	background-color: @curst_a07
+	border: 3px solid #FFFFFF;
     	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 button:focus,
 button:active,
 button:hover {
-	background-color: rgba(var(--crust_rgb), 1);
+	border: 3px solid rgb(34, 221, 238);
+	background-color: @crust_a1
 }
 
 #lock {

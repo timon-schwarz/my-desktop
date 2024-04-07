@@ -1,13 +1,19 @@
 @import "/usr/share/my-desktop/colors/mocha.css";
 
+/* margin: top right bottom left */
+/* Spacing outside the element */
+
+/* padding: top right bottom left */
+/* Spacing inside the element */
+
 * {
   font-family: JetBrainsMono NF;
   font-size: 17px;
 }
 
 window#waybar {
-  background-color: var(--crust);
-  color:var(--text);
+  background-color: @crust;
+  color: @text;
   transition-property: background-color;
   transition-duration: 0.5s;
   border-radius: 0px;
@@ -20,7 +26,7 @@ window#waybar.hidden {
 }
 
 #workspaces {
-    background: var(--crust);
+    background: @crust;
     margin: 5px 1px 6px 1px;
     padding: 0px 1px;
     border-radius: 15px;
@@ -29,7 +35,7 @@ window#waybar.hidden {
     font-style: normal;
     opacity: 0.8;
     font-size: 16px;
-    color: var(--text);
+    color: @text;
 }
 
 #workspaces button {
@@ -37,8 +43,8 @@ window#waybar.hidden {
     margin: 4px 3px;
     border-radius: 15px;
     border: 0px;
-    color: var(--crust);
-    background-color: var(--teal);
+    color: @crust;
+    background-color: @teal;
     transition: all 0.3s ease-in-out;
     opacity: 0.6;
 }
@@ -48,8 +54,8 @@ window#waybar.hidden {
     margin: 4px 3px;
     border-radius: 15px;
     border: 0px;
-    color: var(--crust);
-    background-color: var(--rosewater);
+    color: @crust;
+    background-color: @rosewater;
     transition: all 0.3s ease-in-out;
     opacity: 0.6;
 }
@@ -59,15 +65,15 @@ window#waybar.hidden {
     margin: 4px 3px;
     border-radius: 15px;
     border: 0px;
-    color: var(--crust);
-    background-color: var(--sapphire);
+    color: @crust;
+    background-color: @sapphire;
     transition: all 0.3s ease-in-out;
     opacity: 0.6;
 }
 
 #workspaces button.active {
-    color: var(--crust);
-    background: var(--sapphire);
+    color: @crust;
+    background: @sapphire;
     border-radius: 15px;
     min-width: 40px;
     transition: all 0.3s ease-in-out;
@@ -75,8 +81,8 @@ window#waybar.hidden {
 }
 
 #workspaces button:hover {
-    color: var(--crust);
-    background: var(--sapphire);
+    color: @crust;
+    background: @sapphire;
     border-radius: 15px;
     opacity:1;
 }
@@ -97,31 +103,31 @@ window#waybar.hidden {
   padding: 0px 20px;
   margin: 7px 0px 10px 0px;
   border-radius: 8px;
-  color: var(--crust);
+  color: @crust;
 }
 
 #temperature{
-  background-color: var(--mauve);
+  background-color: @mauve;
 }
 
 #cpu {
-  background-color: var(--lavender);
+  background-color: @lavender;
 }
 
 #memory {
-  background-color: var(--blue);
+  background-color: @blue;
 }
 
 #custom-dunst {
-  background-color: var(--sapphire);
+  background-color: @sapphire;
 }
 
 #idle_inhibitor {
-  background-color: var(--sky);
+  background-color: @sky;
 }
 
 #tray {
-  background-color: var(--teal);
+  background-color: @teal;
 }
 
 #tray > .passive {
@@ -134,29 +140,29 @@ window#waybar.hidden {
 
 
 #battery {
-  background-color: var(--teal);
+  background-color: @teal;
 }
 
 #bluetooth {
-  background-color: var(--sky);
+  background-color: @sky;
 }
 
 #pulseaudio {
-  background-color: var(--sapphire);
+  background-color: @sapphire;
 }
 
 #network {
-  background-color: var(--blue);
+  background-color: @blue;
 }
 
 #clock {
-  background-color: var(--lavender);
+  background-color: @lavender;
 }
 
 #custom-powermenu {
   padding: 0px 25px 0px 20px;
   margin: 7px 20px 10px 0px;
-  background-color: var(--mauve);
+  background-color: @mauve;
 }
 
 @keyframes blink {
