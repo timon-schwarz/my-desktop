@@ -111,8 +111,6 @@ modules:
         
       # fonts
       - fontawesome-fonts-all 		# It is nice to have some fonts ready when needed
-    remove:
-      - kitty                           # Comes with hyprland but I prefer foot
 
 
   - type: fonts
