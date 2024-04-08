@@ -18,7 +18,7 @@ modules:
       - dbus-tools			# dbus support (which is used for inter process communication)
       - dbus-daemon			# dbus support (which is used for inter process communication)
       - wl-clipboard 			# clipboard management CLI
-      - clipman 			# clipboard history manager
+      - copyq    			# clipboard history manager GUI
 
     # window manager
       - hyprland 			# window manager
