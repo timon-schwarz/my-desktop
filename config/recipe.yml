@@ -104,9 +104,11 @@ modules:
       - adwaita-qt5 			# adwaita theme for QT5
       - gnome-themes-extra		# adwaita theme for GTK2
       - gnome-icon-theme		# adwaita theme for icons
+      - lightly                         # QT style
       - qt5ct                           # QT5 theme configuration tool
       - qt6ct                           # QT6 theme configuration tool
       - lxappearance                    # GTK theme configuration tool
+      - kvantum                         # GTK theme configuration tool
         
       # fonts
       - fontawesome-fonts-all 		# It is nice to have some fonts ready when needed
