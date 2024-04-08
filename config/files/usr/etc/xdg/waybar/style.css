@@ -98,6 +98,7 @@ window#waybar.hidden {
 #pulseaudio,
 #memory,
 #custom-dunst,
+#tray,
 #custom-powermenu{
   padding: 0px 20px;
   margin: 7px 0px 10px 0px;
@@ -136,6 +137,7 @@ window#waybar.hidden {
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
 }
+
 
 
 #battery {
