@@ -75,7 +75,6 @@ modules:
       - unrar-free 			# rar archive support
 
     # screenshot
-      - grimshot			# screenshot GUI
       - grim				# screenshot support
       - slurp				# screenshot region support
      
