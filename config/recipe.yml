@@ -96,6 +96,9 @@ modules:
       
      # utility
       - xsensors                        # Hardware sensor monitoring GUI
+        
+     # snap
+      - snapd                           # Snap packages
      
      # video
       - mpv 				# video player
@@ -128,6 +131,11 @@ modules:
         - Oswald
         - Poppins
         - Raleway
+
+  - type: script
+    snippets:
+      - "ln -s /var/lib/snapd/snap /snap" # Needed for classic snap support
+s
 
   - type: files
     files:
