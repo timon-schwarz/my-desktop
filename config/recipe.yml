@@ -135,7 +135,7 @@ modules:
   - type: script
     snippets:
       - "ln -s /var/lib/snapd/snap /snap" # Needed for classic snap support
-s
+
 
   - type: files
     files:
