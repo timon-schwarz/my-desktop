@@ -116,6 +116,9 @@ modules:
       # fonts
       - fontawesome-fonts-all 		# It is nice to have some fonts ready when needed
 
+      # Programming languages
+      - opam                            #OCaml
+
 
   - type: fonts
     fonts:
