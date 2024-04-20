@@ -135,9 +135,7 @@ modules:
         - Oswald
         - Poppins
         - Raleway
-
-  - type: yafti
-
+        
   - type: files
     files:
       # copies config/files/usr into your image's /usr.
@@ -148,5 +146,7 @@ modules:
       # /var and /opt are deleted when building the container.
       # So I opted to use /usr/share/my-desktop for some things that normaly go into /usr/local
       - usr: /usr
+
+  - type: yafti
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
