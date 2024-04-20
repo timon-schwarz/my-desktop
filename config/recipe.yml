@@ -136,9 +136,7 @@ modules:
         - Poppins
         - Raleway
 
-  - type: script
-    snippets:
-      - "timedatectl set-local-rtc 1 — adjust-system-clock" # Dual boot compatability with windows
+  - type: yafti
 
   - type: files
     files:
