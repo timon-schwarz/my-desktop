@@ -138,8 +138,7 @@ modules:
 
   - type: script
     snippets:
-      - "ln -s /var/lib/snapd/snap /snap" # Needed for classic snap support
-
+      - "timedatectl set-local-rtc 1 --adjust-system-clock" # Dual boot compatability with windows
 
   - type: files
     files:
