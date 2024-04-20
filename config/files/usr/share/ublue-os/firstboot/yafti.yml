@@ -6,7 +6,6 @@ screens:
     source: yafti.screen.title
     values:
       title: "Welcome to my desktop!"
-      icon: "/path/to/icon"
       description: |
         This guided installer will help you get started with your new system.
   can-we-modify-your-flatpaks:
@@ -106,7 +105,6 @@ screens:
     source: yafti.screen.title
     values:
       title: "Allmost done!"
-      icon: "/path/to/icon"
       links:
         - "Make compatible with windows dual boot":
             run: timedatectl set-local-rtc 1 --adjust-system-clock
