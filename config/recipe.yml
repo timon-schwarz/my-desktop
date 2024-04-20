@@ -37,6 +37,7 @@ modules:
       - polkit				# polkit server
       - polkit-kde 			# polkit agent GUI
       - kwallet 			# secure secret storage - keyring
+      - kwalletmanager 			# kwallet GUI
       - ksshaskpass 			# ssh credential helper that uses kwallet
       - libsecret                       # keyring API that applications use
 
