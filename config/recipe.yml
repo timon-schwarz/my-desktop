@@ -127,6 +127,10 @@ modules:
         - Oswald
         - Poppins
         - Raleway
+        
+ - type: script
+    snippets:
+      - timedatectl set-local-rtc 1 --adjust-system-clock
 
   - type: files
     files:
