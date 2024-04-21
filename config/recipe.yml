@@ -23,6 +23,8 @@ modules:
       - dbus-daemon			# dbus support (which is used for inter process communication)
       - wl-clipboard 			# clipboard management CLI
       - copyq    			# clipboard history manager GUI
+      - fuse                            # needed for some stuff eg. AppImages
+      - fuse-lib                        # needed for some stuff eg. AppImages
 
     # window manager
       - hyprland 			# window manager
