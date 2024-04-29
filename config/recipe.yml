@@ -13,8 +13,9 @@ modules:
   - type: rpm-ostree
     repos:
       # when including COPR repos, use the %OS_VERSION% magic string
-      - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo 
-      - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+      - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo # Startship
+      - https://pkgs.tailscale.com/stable/fedora/tailscale.repo # Tailscale
+      - https://download.docker.com/linux/fedora/docker-ce.repo # Docker
     install:
     # other
       - xorg-x11-server-Xwayland	# X11 application suppport
@@ -132,6 +133,13 @@ modules:
         
       # fonts
       - fontawesome-fonts-all 		# It is nice to have some fonts ready when needed
+
+      # Docker
+      - docker-ce
+      - docker-ce-cli
+      - containerd.io
+      - docker-buildx-plugin
+      - docker-compose-plugin
 
       # Everything else
       - distrobox                       # Just google it
