@@ -159,6 +159,10 @@ modules:
         - Oswald
         - Poppins
         - Raleway
+
+  - type: akmods
+    install:
+      - v4l2loopback    # Needed for droidcam
         
   - type: files
     files:
